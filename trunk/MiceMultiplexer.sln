@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiceMultiplexer", "MiceMultiplexer\MiceMultiplexer.csproj", "{CB6590D7-E799-4DC6-B7BD-8129B15C062E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawInputSharp", "RawInputSharp\RawInputSharp.csproj", "{A409E257-14DA-4B78-B875-1456035481B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawMouseDemo", "RawMouseDemo\RawMouseDemo.csproj", "{8E30F4C9-358D-4919-96E0-D50039D615EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB6590D7-E799-4DC6-B7BD-8129B15C062E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB6590D7-E799-4DC6-B7BD-8129B15C062E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB6590D7-E799-4DC6-B7BD-8129B15C062E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB6590D7-E799-4DC6-B7BD-8129B15C062E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A409E257-14DA-4B78-B875-1456035481B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A409E257-14DA-4B78-B875-1456035481B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A409E257-14DA-4B78-B875-1456035481B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A409E257-14DA-4B78-B875-1456035481B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E30F4C9-358D-4919-96E0-D50039D615EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E30F4C9-358D-4919-96E0-D50039D615EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E30F4C9-358D-4919-96E0-D50039D615EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E30F4C9-358D-4919-96E0-D50039D615EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
