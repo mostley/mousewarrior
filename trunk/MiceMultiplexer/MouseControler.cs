@@ -94,6 +94,16 @@ namespace MiceMultiplexer
         {
           Cursor.Current = m_cLeftCursor;
         }
+
+        if (mouse1.Buttons[0])
+        {
+          SwitchFocusToFirstMouse();
+        }
+
+        if (mouse2.Buttons[0])
+        {
+          SwitchFocusToSecondMouse();
+        }
       }
     }
 
@@ -101,11 +111,8 @@ namespace MiceMultiplexer
     {
       if (HasMovement(dx, dy))
       {
-        m_bIsFirstMouse = true;
+        SwitchFocusToFirstMouse();
 
-        ShowDummy(m_SecondMousePos, true);
-
-        Cursor.Position = m_FirstMousePos;
         m_FirstMousePos.Offset(dx, dy);
       }
     }
@@ -114,14 +121,29 @@ namespace MiceMultiplexer
     {
       if (HasMovement(dx, dy))
       {
-        m_bIsFirstMouse = false;
+        SwitchFocusToSecondMouse();
 
-        ShowDummy(m_FirstMousePos, false);
-
-        Cursor.Position = m_SecondMousePos;
         m_SecondMousePos.Offset(dx, dy);
 
       }
+    }
+
+    private void SwitchFocusToFirstMouse()
+    {
+      m_bIsFirstMouse = true;
+
+      ShowDummy(m_SecondMousePos, true);
+
+      Cursor.Position = m_FirstMousePos;
+    }
+
+    private void SwitchFocusToSecondMouse()
+    {
+      m_bIsFirstMouse = false;
+
+      ShowDummy(m_FirstMousePos, false);
+
+      Cursor.Position = m_SecondMousePos;
     }
 
     private bool HasMovement(int dx, int dy)
