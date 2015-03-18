@@ -1,0 +1,1 @@
+Multiplexes two mice for Multiuser or Multiscreen use. It emulates two Mousecursors.
